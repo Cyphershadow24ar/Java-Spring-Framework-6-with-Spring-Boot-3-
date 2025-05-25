@@ -79,9 +79,108 @@ class Hello{
         num8--; // post decrement
         System.out.println(num8);
 
-        // Relational Operators
-
         
+        // Relational Operators
+        int num10 = 10;
+        int num11 = 20;
+        boolean isEqual = num10 == num11; // equal to
+        System.out.println(isEqual);
+        boolean isNotEqual = num10 != num11; // not equal to
+        System.out.println(isNotEqual);
+        boolean isGreater = num10 > num11; // greater than
+        System.out.println(isGreater);
+        boolean isLess = num10 < num11; // less than
+        System.out.println(isLess);
+        boolean isGreaterOrEqual = num10 >= num11; // greater than or equal to
+        System.out.println(isGreaterOrEqual);
+        boolean isLessOrEqual = num10 <= num11; // less than or equal to
+        System.out.println(isLessOrEqual);
+
+
+        // Logical Operators
+
+        boolean condition1 = true;
+        boolean condition2 = false; 
+
+        boolean andCondition = condition1 && condition2; // logical AND
+        System.out.println(andCondition);
+
+        boolean orCondition = condition1 || condition2; // logical OR
+        System.out.println(orCondition);
+
+        boolean notCondition = !condition1; // logical NOT
+        System.out.println(notCondition);
+
+        // if-else statement
+
+        int x1 = 8;
+        int y1 = 7;
+
+        if(x1 > y1){
+            System.out.println(x1);
+            System.out.println("Thank you.");
+        }
+        else
+            System.out.println(y1);
+
+        // If else if 
+        int x2 = 8;
+        int y2 = 7;
+        int z1 = 9;
+
+        if(x2>y2 && x2>z1 ){
+            System.out.println(x2+ "X2 is the greatest.");
+        }
+        else if(y2>z1){
+            System.out.println(y2+" y2 is the greatest.");
+        }else{
+            System.out.println(z1+" Z1 is the greatest.");
+        }
+
+        // Ternary OPerator 
+        int n =100;
+        int result3 = 0;
+
+        // if(n%2 ==0 )
+        //     result3 = 10;
+        // else
+        //     result3 = 20;
+
+        result3 = n%2 == 0 ? 10 : 20;
+
+        // IN ternary operator first we write the condition that check the condition on boolean then after the '?' mark we write the true and false output for the condition 'True' : 'False'.
+
+        System.out.println(result3);  
+
+        // Switch Case Statement
+
+        int n1 = 4;
+
+        switch(n1){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Enter a valid number.");
+        }
     }
 }
 
